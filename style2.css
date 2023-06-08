@@ -1,0 +1,39 @@
+body{
+  display: block;
+  margin: 1px;
+}
+
+header {
+  background-color: #ba6f6f;
+  padding: 15px;
+}
+
+.wrapper{
+  padding-left: 900px;
+  padding-bottom: 5px;
+}
+
+.btn{
+  cursor: pointer;
+  background: rgb(85, 98, 214);
+  margin-left: 900px;
+}
+
+.btn a{
+  text-decoration: none;
+  font-size: 15px;
+  color: azure;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+
+table th{
+  font-size: 20px;
+}
+
+
+  
