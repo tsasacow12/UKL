@@ -62,11 +62,38 @@ header nav a:hover {
   color: #ff0000;
 }
 
-.wrapper img {
-  width: 500px;
-  height: 500px;
-  padding-top: 30px;
-  padding-left: 800px;
+#home {
+  padding: 20px;
+  text-align: left;
 }
+
+.kolom {
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+}
+
+img{
+  
+}
+
+
+
+
+ 
 
 
