@@ -6,12 +6,13 @@
     </head>
 
     <body>
+    <?php include("sidebar.php"); ?>
         <header>
         <button class="btn">
 			<a href="add.php">Add new user</a><br/><br/>
 		</button>
         </header>
-        <table border="1" class="table">
+        <table class="table">
             <tr>
                 <th>No</th>
                 <th>nama makanan</th>
@@ -44,5 +45,6 @@
         </table>
         
     </body>
+    
 </html>
 
