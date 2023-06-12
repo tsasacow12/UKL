@@ -23,6 +23,7 @@ include("koneksi.php");
     <h1>Create Data Baru</h1>
 </head>
 <body>
+<?php include("sidebar.php"); ?>
     <h3>Data buku</h3>
     <form method="post" action="add.php" enctype="multipart/form-data">
         <table>
@@ -37,11 +38,6 @@ include("koneksi.php");
             <tr> 
                 <td>porsi</td>
                 <td><input type="text" id="porsi" name="porsi"></td>
-            </tr>
-            <tr> 
-                <td>kalori</td>
-                <td><input type="text" id="kalori" name="kalori"></td>
-                
             </tr>
             <!-- <tr>
                 <td>gambar</td>
@@ -62,15 +58,14 @@ include("koneksi.php");
             $nama= $_POST['nama'];
             $kategori = $_POST['kategori'];
             $porsi = $_POST['porsi'];
-            $kalori= $_POST['kalori'];
             echo($nama);
             // include database connection file
             include_once("koneksi.php");
                     
             // Insert user data into table
             $result = mysqli_query($mysqli, 
-            "INSERT INTO makanan(nama_makanan,kategori_makanan,porsi,kalori) 
-            VALUES('$nama','$kategori','$porsi','$kalori')");
+            "INSERT INTO makanan(nama_makanan,kategori_makanan,porsi) 
+            VALUES('$nama','$kategori','$porsi')");
     
             
             // Show message when user added

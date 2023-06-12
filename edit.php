@@ -8,7 +8,8 @@ if (!isset($_GET['id_makanan'])) {
 
 $id = $_GET['id_makanan'];
 
-$sql = "SELECT * FROM makanan WHERE id_makanan='$id'";
+$sql = "SELECT * FROM makanan WHERE id_makanan = $id";
+
 
 $result = mysqli_query($mysqli, $sql);
 
@@ -22,7 +23,7 @@ if (!$row) {
 $nama = $row['nama_makanan'];
 $kategori = $row['kategori_makanan'];
 $stock = $row['porsi'];
-$hrg = $row['kalori'];
+
 ?>
 
 <!DOCTYPE html>
@@ -49,10 +50,7 @@ $hrg = $row['kalori'];
                 <td>porsi</td>
                 <td><input type="text" name="porsi" value="<?php echo $stock;?>"></td>
             </tr>
-            <tr> 
-                <td>kalori</td>
-                <td><input type="text" name="kalori" value="<?php echo $hrg;?>"></td>
-            </tr>
+
             <tr>
                 <td><input type="hidden" name="id_makanan" value=<?php echo $_GET['id_makanan'];?>></td>
                 <td><input type="submit" name="simpan" value="Simpan"></td>

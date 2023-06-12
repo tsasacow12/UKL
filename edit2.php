@@ -21,7 +21,7 @@ if (!$row) {
 
 $nama = $row['nama_olahraga'];
 $kategori = $row['jenis_olahraga'];
-$stock = $row['kalor_terbuang'];
+$stock = $row['kalori_terbuang'];
 ?>
 
 <!DOCTYPE html>

@@ -1,20 +1,24 @@
 <?php
 include("koneksi.php");
 
-$id_olga = $_POST["id_olahraga"];
-$nama = $_POST["nama_olahraga"];
-$kategori = $_POST['kategori_makanan'];
-$porsi = $_POST['jenis_olahraga'];
+$id_info = $_POST["id_info"];
+$nama_makanan = $_POST["nama_makanan"];
+$kalori = $_POST["info_makanan"];
+$manfaat = $_POST['manfaat'];
 
-$sql = "UPDATE olahraga SET nama_olahraga = '$nama', kategori_makanan = '$kategori', porsi = '$porsi', kalori = '$kalori' WHERE id_makanan = '$id_makanan'";
+$sql = "UPDATE informasi_makanan SET 
+        nama_makanan = '$nama_makanan', 
+        info_makanan = '$kalori',
+        manfaat = '$manfaat'
+        WHERE id_info = '$id_info'";
 
-$result = mysqli_query($mysqli, $sql); // Menjalankan pernyataan SQL
+$result = mysqli_query($mysqli, $sql);
 
 if ($result) {
-    header("location: index.php");
+    header("location: index3.php");
 } else {
     echo "Gagal memperbarui data: " . mysqli_error($mysqli);
 }
 
-mysqli_close($mysqli); // Menutup koneksi ke database
+mysqli_close($mysqli);
 ?>

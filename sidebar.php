@@ -19,8 +19,6 @@
             <ul>
                 <li><a class="#" href="admin.php  "><i class="home"></i> Dashboard</a></li>
                 <li><a class="#" href="add.php"><i class="makanan"></i> makanan</a></li>
-                <li><a class="#" href="#"><i class="olahraga"></i> olahraga</a></li>
-                <li><a class="#" href="#"><i class="olahraga"></i> defisit kalori</a></li>
                 <li><a class="#" href="#"><i class="fa fa-user-circle"></i> Profile</a></li>
             </ul>
         </div>

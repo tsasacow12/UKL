@@ -3,7 +3,7 @@
     <head>
 		<title>admin</title>
         <h1>menampilkan tabel</h1>
-        <link rel="stylesheet" href="gaya.css">
+        <link rel="stylesheet" href="style5.css">
     </head>
 
     <body>
@@ -34,8 +34,8 @@
                 <td><?php echo $data ['jenis_olahraga']; ?></td>
                 <td><?php echo $data ['kalori_terbuang']; ?></td>
 
-                <td><a href = "edit2.php?id_makanan=<?php echo $data['id_olahraga'];?>">edit</a>
-                    <a href="delete2.php?id_makanan=<?php echo $data['id_olahraga'];?>">delete</a>
+                <td><a href = "edit2.php?id_olahraga=<?php echo $data['id_olahraga'];?>">edit</a>
+                    <a href="delete2.php?id_olahraga=<?php echo $data['id_olahraga'];?>">delete</a>
                 </td>
             </tr>
             <?php } ?>
