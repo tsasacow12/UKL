@@ -10,7 +10,7 @@
     <form method="post" action="addinfo.php" enctype="multipart/form-data">
         <table>
             <tr> 
-                <td> nama makanan</td>
+                <td>git  nama makanan</td>
                 <td><input type="text" id="nama_makanan" name="nama_makanan"></td>
             </tr>
             <tr> 
