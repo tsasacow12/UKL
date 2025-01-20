@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Total dari Array</h2>
+    <p id="output4"></p>
+
+    <script>
+        let scores = [10, 20, 30, 40];
+        document.getElementById('output4').textContent = 'Total: ' + scores.reduce((a, b) => a + b, 0);
+    </script>
+</body>
+</html>

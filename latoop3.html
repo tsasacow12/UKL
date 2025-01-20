@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class AkunBank {
+            constructor(nama, nomorrek, saldo) {
+                this.nama = nama;
+                this.nomorrek = nomorrek;
+                this.saldo = saldo;
+            }
+
+            setor(jumlah) {
+                this.saldo += jumlah;
+                console.log(`setoran berhasil. saldo sekarang: ${this.saldo}`);
+            }
+
+            tarik(jumlah) {
+                if (this.saldo >= jumlah) {
+                    this.saldo -= jumlah;
+                    console.log(`penarikan berhasil. saldo sekarang: ${this.saldo}`);
+                } else {
+                    console.log("saldo tidak mencukupi.");
+                }
+            }
+
+            cekSaldo() {
+                console.log(`saldo saat ini: ${this.saldo}`);
+            }
+        }
+
+
+        const akunBank = new AkunBank("asaa", "1234567899", 1000000);
+        akunBank.setor(600000);
+        akunBank.tarik(500000);
+        akunBank.cekSaldo();
+    </script>
+</body>
+</html>

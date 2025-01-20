@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Filter nilai di atas 80</h2>
+    <p id="output3"></p>
+
+    <script>
+        let grades = [85, 92, 75, 60, 95];
+        let highGrades = grades.filter(grade => grade > 80);
+        document.getElementById('output3').textContent = 'Array nilai di atas 80: ' + highGrades;
+    </script>
+</body>
+</html>

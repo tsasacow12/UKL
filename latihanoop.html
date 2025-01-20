@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class mobil{
+            constructor(merk,model,tahun){
+                this.merk = merk;
+                this.model = model;
+                this.tahun = tahun;
+            }
+
+            getInfo(){
+                return `Mobil = ${this.merk} ${this.model} tahun ${this.tahun}.`;
+            }
+        }
+
+        let mobil1 = new mobil("Toyota", "Corolla", 2020);
+        console.log(mobil1.getInfo());
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Latihan 5</h1>
+    <p>Masukkan Nama Hari dalam Bahasa Inggris</p>
+   <form onsubmit="event.preventDefault(); hasilHari();">
+    <label for="day">Hari dalam bahasa Inggris</label>
+    <input type="text" id="day" required>
+    <button type="submit">Enter</button>
+   </form>
+   <p id="pesan"></p>
+    
+   <script>
+        function hasilHari(){
+            const day = document.getElementById("day").value.toLowerCase();
+            let hasil;
+            switch(day) {
+                case "monday":
+                    hasil = "Senin";
+                    break;
+                case "tuesday":
+                    hasil = "Selasa";
+                    break;
+                case "wednesday":
+                    hasil = "Rabu";
+                    break;
+                case "thursday":
+                    hasil = "Kamis";
+                    break;
+                case "friday":
+                    hasil = "Jumat";
+                    break;
+                case "saturday":
+                    hasil = "Sabtu";
+                    break;
+                case "sunday":
+                    hasil = "Minggu";
+                    break;
+                default:
+                    hasil = "Nama hari tidak dikenal";
+            }
+
+            document.getElementById("pesan").innerText = hasil;
+                    
+        }
+   </script>
+</body>
+</html>

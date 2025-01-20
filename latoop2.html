@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Persegipanjang {
+            constructor(panjang, lebar) {
+                this.panjang = panjang;
+                this.lebar = lebar;
+            }
+
+            luas() {
+                return this.panjang * this.lebar;
+            }
+
+            keliling() {
+                return 2 * (this.panjang + this.lebar);
+            }
+        }
+
+        const persegipanjang1 = new Persegipanjang(6, 9);
+        console.log("luas:", persegipanjang1.luas());
+        console.log("keliling:", persegipanjang1.keliling());
+    </script>
+</body>
+</html>

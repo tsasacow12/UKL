@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Masukkan Nama anda</h1>
+    <form onsubmit="event.preventDefault(); sambutPengguna();">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" required>
+        <button type="submit">submit</button>
+    </form>
+    <p id="pesan"></p>
+</body>
+</html>
+
+<script>
+function sambutPengguna() {
+    const namaPengguna = document.getElementById("nama").value;
+
+    console.log("selamat datang, " + namaPengguna + "!");
+
+    document.getElementById("pesan").innerText = "selamat datang, " + namaPengguna + "!";
+
+
+}
+    
+</script>

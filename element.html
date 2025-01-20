@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jam</title>
+    <!-- menambahkan library react dan reactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- menambahkan babel untuk konversi ke JavaScript -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <!-- elemen root tempat react akan mengubah jam -->
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // fungsi untuk memperbarui jam 
+        function tick() {
+            // membuat elemen berisi teks dan waktu
+            const element = (
+                <div>
+                    <h1>Hello, Bro!</h1>
+                    <h2>Sekarang pukul {new Date().toLocaleTimeString()}.</h2>
+                </div>
+            );
+            // mengubah elemen ke dalam elemen dengan id 'root'
+            ReactDOM.render(element, document.getElementById('root'));
+        }
+        // memanggil fungsi tick 
+        setInterval(tick, 1000);
+        tick();
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 4 - Cek Angka Positif, Negatif, atau Nol</title>
+</head>
+<body>
+    <h1>Masukkan Angka</h1>
+    <form onsubmit="event.preventDefault(); cekAngka();">
+        <label for="angka">Angka:</label>
+        <input type="number" id="angka" name="angka" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="hasil"></p>
+
+    <script>
+        function cekAngka() {
+            const angkaInput = document.getElementById("angka");
+            const hasil = document.getElementById("hasil");
+            const angka = parseFloat(angkaInput.value);
+            let output = "";
+
+            if (angka > 0) {
+                output = "Angka positif";
+            } else if (angka < 0) {
+                output = "Angka negatif";
+            } else {
+                output = "Angka nol";
+            }
+
+            hasil.textContent = output;
+        }
+    </script>
+</body>
+</html>
